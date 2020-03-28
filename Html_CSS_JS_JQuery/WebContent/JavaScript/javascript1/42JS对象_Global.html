@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global对象</title>
+    <script >
+
+
+        var str = "坤坤";
+        var encode = encodeURI(str);
+        document.write(encode +"<br>");
+        var s = decodeURI(encode);
+        document.write(s +"<br>");
+
+
+        var str1 = "坤坤1";
+        var encode1 = encodeURIComponent(str1);
+        document.write(encode1 +"<br>");
+        var s1 = decodeURIComponent(encode);
+        document.write(s1 +"<br>");
+
+
+        var str = "a234abc";
+        var number = parseInt(str);
+        //alert(number + 1);
+
+        var a = NaN;
+
+        document.write(a == NaN);
+        document.write(isNaN(a));
+
+        var jscode = "alert(123)";
+        eval(jscode);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

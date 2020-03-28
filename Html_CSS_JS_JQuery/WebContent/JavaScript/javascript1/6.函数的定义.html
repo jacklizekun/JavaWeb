@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+
+	function  add(a,b){
+		var sum = a+b;
+		document.write("两个参数的总和："+ sum);	
+		//return sum;
+	}
+		
+	function add(){
+		document.write("长度："+arguments.length+"<br/>");
+		for(var index = 0 ; index<arguments.length ; index++){
+			document.write(arguments[index]+",");	
+		}
+		
+		//var sum  = a+b+c;	
+		//var sum = 0;
+		//document.write("三个参数的总和："+ sum);
+	}
+		
+	//调用函数
+	add(11,21,13,14);
+	
+	
+
+
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>函数</title>
+</head>
+
+<body>
+</body>
+</html>

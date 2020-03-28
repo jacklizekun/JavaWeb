@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单校验</title>
+		<script>
+			
+			function showTips(spanID,msg){
+				var span = document.getElementById(spanID);
+				span.innerHTML = msg;
+			}
+			
+			function checkUsername(){
+				
+				/*
+				 alert(this)  每一个函数中都隐藏着一个this指针, 指向的是当前事件触发对象 
+				*/
+				var uValue = document.getElementById("username").value;
+//				alert(uValue);
+				var span = document.getElementById("span_username");
+				if(uValue.length < 6){
+					span.innerHTML = "长度不足"
+					return false;
+				}else{
+					span.innerHTML = "可以使用"
+					return true;
+				}
+			}
+			
+			function checkForm(){
+				var flag = checkUsername();
+				return flag;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<form action="../01-自动轮播图片/图片自动轮播.html" onsubmit="return checkForm()">
+			用户名:<input type="text" id="username" onblur="checkUsername()"  onfocus="showTips('span_username','用户名长度不能小于6位')" /><span id="span_username"></span> <br />
+			<input type="submit" value="注册" />
+		</form>
+			
+	</body>
+</html>

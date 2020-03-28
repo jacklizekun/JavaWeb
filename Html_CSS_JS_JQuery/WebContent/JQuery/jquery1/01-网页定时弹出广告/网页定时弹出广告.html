@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+		<script>
+			//显示广告
+			function showAd(){
+				$("#img1").slideDown(2000);
+				setTimeout("hideAd()",3000);
+			}
+			
+			//隐藏广告
+			function hideAd(){
+				$("#img1").slideUp(2000);
+			}
+			
+			
+			$(function(){
+				setTimeout("showAd()",3000);
+				
+			});
+		</script>
+	</head>
+	<body>
+		<img src="../img/f001a62f-a49d-4a4d-b56f-2b6908a0002c_g.jpg" id="img1" width="100%" style="display:none"  />
+	</body>
+</html>

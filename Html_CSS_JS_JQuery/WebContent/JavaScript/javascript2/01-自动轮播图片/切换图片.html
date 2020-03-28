@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>切换图片</title>
+		<script>
+			function changeImg(){
+//				alert("要切换了")
+				var img = document.getElementById("img1");
+				img.src = "../img/1-161104143944.gif";
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点击切换图片" onclick="changeImg()" />
+		<br />
+		<img src="../img/222.jpg" id="img1" />
+	</body>
+</html>
